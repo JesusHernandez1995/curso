@@ -1,0 +1,43 @@
+Comandos:
+
+1er paso =>
+git init : Desde la terminal, creamos un nuevo repositorio de nuestro código.
+- Una vez creado el repositorio, creamos nuestro archivo (.html, css, etc) sobre el cual trabajaremos
+
+2do paso=>
+git status: Podemos ver cual es el estado actual de nuestro repositorio.
+*Se recomienda hacer un nuevo 'commit' cada vez que hacemos un cambio en nuestro sitio (web)*
+-stelling index: es la fase que tenemos de nuestros archivos antes de enviarlo a una nueva version.
+Antes de guardar la version, debemos de enviar nuestra página al stelling index.
+
+- En el stelling index se encuentran todos los archivos preparados antes de hacer un 'commit', antes de guardarlos
+en una nueva versión.
+
+- En este paso, queremos enviar nuestro archivo (.html, css, etc) recién creado al stelling index, y para ello, 
+usamos el siguiente comando:
+
+3er paso =>
+git add nombrearchivo.html: Con ello, ya agregamos el archivo y lo preparamos para ser guardados en una nueva versión.
+Ya el archivo está en el stelling index.
+
+4to paso =>
+Para guardar una nueva versión, utilizamos...
+git commit -m ""  : Entre comillas, agregamos un parrafo descriptivo de los cambios que estamos haciendo, menos
+de 50 palabras. Qué estamos cambiando y por qué. Una vez hecho esto, aparecerá:
+
+1 file changed, 0 insertions, 0 deletions (1 archivo cambiado, 0 lineas de código y 0 lineas de código borrados)
+
+5to paso =>
+*Hacemos modificaciones en nuestro código, trabajamos sobre él*
+Si volvemos a escribir 'git status', aparecerá que nuestro archivo no está en el stelling index, aqui debemos hacer lo
+siguiente: 
+git add.     : Agregamos todos los archivos modificamos y lo preparamos para ser guardados en una nueva versión.
+
+6to paso => 
+Escribimos de nuevo 'git status' y aparecerá: 
+modified nombrearchivo.html
+
+1 file changed, 10 insertions (por ejemplo)
+ 
+
+
