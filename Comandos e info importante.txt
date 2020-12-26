@@ -37,7 +37,52 @@ git add.     : Agregamos todos los archivos modificamos y lo preparamos para ser
 Escribimos de nuevo 'git status' y aparecerá: 
 modified nombrearchivo.html
 
+7mo paso =>
+Escribimos git commit -m "" : Volvemos a escribir un nuevo párrafo descriptivo, y aparecerá:
 1 file changed, 10 insertions (por ejemplo)
+
+-----------------
+
+Para remover archivos del stelling index, usamos:
+git rm --cached nombrearchivo.html
+
+Si queremos tener archivos que no sean incluidos dentro del git, hacemos lo siguiente:
+- Creamos un archivo en sublime text con la terminación: .gitignore
+- Dentro de ese archivo, colocamos el nombre y los tipos de archivos que no queremos que sean incluidos. 
+Por ejemplo, contacto.html..
+
+------------------
+
+git log : Aparecerán el username y el correo de todas las personas que hayan hecho cambios o commits, 
+junto con su descripción.
+
+git log --stat: Para ver las estadísticas del commit, cuantos archivos han sido modificados
+
+git log --oneline: Podemos ver el historial de todos los commits que hemos hecho, pero en una sola linea
+
+git log --graph: Podemos ver en una gráfica todas aquellos commits que hayamos hecho
+
+git log --oneline --graph --all: Combinación de todos los comandos anteriores
+
+git diff: me indica las diferencias entre el commit pasado y el commit actual
+
+git diff xxxxxx nombrearchivo.html: Me compara las diferencias entre un commit y otro, en 'xxxxxx' está el nombre
+del identificador del commit.
+
+git checkout xxxxxx: permite volver a versiones anteriores, a commits anteriores. Sin embargo, todos aquellos
+cambios que hayamos realizado después de esa version se perderán. 
+
+--------------------
+
+git branch : Nos permite conocer todos los branches que tenemos de nuestro proyecto
+
+git checkout master : permite cambiar la rama sobre la que estamos trabajando y definirla a 'master'. Al hacer esto,
+se borrará los cambios hechos en la rama anterior.
+
+git checkout -b nombraRama: Nos permite crear una nueva rama, de nombre nombreRama. Al hacer esto, duplicamos
+nuestro proyecto.
+
+
  
 
 
